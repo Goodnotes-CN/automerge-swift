@@ -16,7 +16,8 @@ import Foundation
     @usableFromInline let codingPath: [CodingKey]
     @usableFromInline let userInfo: [CodingUserInfoKey: Any]
 
-    @inlinable init(
+    @usableFromInline
+    init(
         doc: Document,
         userInfo: [CodingUserInfoKey: Any],
         codingPath: [CodingKey]

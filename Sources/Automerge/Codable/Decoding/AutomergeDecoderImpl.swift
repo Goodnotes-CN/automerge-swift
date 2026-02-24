@@ -12,11 +12,10 @@ import Foundation
  */
 
 @usableFromInline struct AutomergeDecoderImpl {
-    @usableFromInline let doc: Document
-    @usableFromInline let codingPath: [CodingKey]
-    @usableFromInline let userInfo: [CodingUserInfoKey: Any]
-
-    @inlinable init(
+    @usableFromInline var doc: Document
+    @usableFromInline var codingPath: [CodingKey]
+    @usableFromInline var userInfo: [CodingUserInfoKey: Any]
+    @usableFromInline init(
         doc: Document,
         userInfo: [CodingUserInfoKey: Any],
         codingPath: [CodingKey]
